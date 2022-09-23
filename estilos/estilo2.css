@@ -1,0 +1,226 @@
+@font-face{
+	font-family:'myfont1';
+	src:url("../fonts/TAKOYAKI.ttf");
+}
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family:verdana, sans-serif;
+}
+
+body{
+	background-color:white;
+	overflow-x:hidden;
+	background-image:url("../imagens/bgjapones5.png");
+	background-attachment:fixed;
+	background-size:100%;
+	color:white;
+}
+
+.site{
+	display:grid;
+	grid-template-columns:2% 24% 24% 24% 24% 2%;
+	grid-template-rows:130px 30px 90px 360px 200px 100px;
+}
+
+#topo{
+	padding:5px;
+	display:flex;
+	align-items:center;
+	grid-column:1/7;
+	grid-row:1/2;
+	background-color:black;
+}
+
+#topo img{
+	width:100px;
+}
+
+h1{
+	font-family:'myfont1';
+}
+
+h1 span{
+	font-family:'myfont1';
+}
+
+.paidoflag{
+	grid-column:5/6;
+	grid-row:1/2;
+	display:flex;
+	justify-content:right;
+}
+
+.paidoflag img{
+	padding:30px 2px;
+	width:100px;
+	grid-column:5/6;
+	grid-row:1/2;
+}
+
+#menu{
+	background-color:black;
+	opacity:70%;
+	grid-column:1/7;
+	grid-row:2/3;
+	display:flex;
+	justify-content:right;
+	box-shadow:5px 0 2px 2px black;
+}
+
+#menu ul{
+	display:flex;
+	list-style:none;
+	justify-content:space-evenly;
+	align-items:center;
+	width:600px;
+	height:100%;
+}
+
+#menu li a:hover{
+	background-color:white;
+	color:black;
+}
+
+#menu li a{
+	color:orange;
+	font-weight:bolder;
+	transition:background 200ms;
+	text-decoration:none;
+	padding:5px;
+}
+
+#margemesquerda{
+	background-color:orange;
+	opacity:70%;
+	grid-column:1/2;
+	grid-row:3/6;
+}
+
+#margemdireita{
+	background-color:orange;
+	opacity:70%;
+	grid-column:6/7;
+	grid-row:3/6;
+}
+
+#anterior{
+	background-color:#000000e8;
+	color:white;
+	grid-column:2/6;
+	grid-row:4/6;
+	display:flex;
+	align-items:center;
+	justify-content:space-evenly;
+}
+
+.formulario{
+	width:400px;
+	height:500px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+.formulario h1{
+	font-size:4.2rem;
+	color:orange;
+}
+
+form{
+	height:400px;
+	border:1px solid white;
+	border-radius:20px;
+	padding:0 20px;
+	margin-top:30px;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-evenly;
+}
+
+input{
+	background:#ffffff26;
+    border:none;
+    border-bottom:2px solid #444444;
+	border-right:2px solid #444444;
+    outline: none;
+    color:white;
+    font-size:13px;
+    width:100%;
+    letter-spacing:4px;
+}
+
+.botao{
+	display:flex;
+	justify-content:right;
+}
+
+.botao input:hover{
+	background:white;
+	color:black;
+	transition:200ms;
+}
+
+.botao input{
+	background:#ff76006b;
+	width:20%;
+	height:30px;
+	border:1px solid white;
+	border-radius:5px;
+	text-transform:bolder;
+	letter-spacing:2px;
+	font-weight:bolder;
+}
+
+#barralateral{
+	background-color:black;
+	width:450px;
+	height:500px;
+	border-radius:50%;
+	grid-column:4/6;
+	grid-row:4/7;
+}
+
+#rodape{
+	background-color:black;
+	color:gray;
+	grid-column:1/7;
+	grid-row:6/7;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding-left:10px;
+}
+
+.redes{
+	width:400px;
+	height:50px;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+}
+
+.redes img{
+	width:20px;
+	height:20px;
+}
+
+.redes a{
+	color:gray;
+	width:260px;
+	text-decoration:none;
+	display:flex;
+	justify-content:space-evenly;
+	transition:200ms;
+}
+
+.redes a:hover{
+	color:orange;
+}
+
+
+
+
+

@@ -1,0 +1,275 @@
+@font-face{
+	font-family:'myfont1';
+	src:url("../fonts/TAKOYAKI.ttf");
+}
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	
+}
+
+body{
+	background-color:white;
+	overflow-x:hidden;
+	background-image:url("../imagens/bgjapones3.png");
+	background-attachment:fixed;
+	background-size:100%;
+	color:white;
+}
+
+.site{
+	display:grid;
+	grid-template-columns:2% 24% 24% 24% 24% 2%;
+	grid-template-rows:130px 30px 180px 330px 200px 330px 300px 2000px 100px 100px;
+}
+
+#topo{
+	padding:5px;
+	display:flex;
+	align-items:center;
+	grid-column:1/7;
+	grid-row:1/2;
+	background-color:black;
+}
+
+#topo img{
+	width:100px;
+}
+
+h1{
+	font-family:'myfont1';
+}
+
+.paidoflag{
+	grid-column:5/6;
+	grid-row:1/2;
+	display:flex;
+	justify-content:right;
+}
+
+.paidoflag img{
+	padding:30px 2px;
+	width:100px;
+	grid-column:5/6;
+	grid-row:1/2;
+}
+
+#menu{
+	background-color:black;
+	opacity:70%;
+	grid-column:1/7;
+	grid-row:2/3;
+	display:flex;
+	justify-content:right;
+	box-shadow:5px 0 2px 2px black;
+}
+
+#menu ul{
+	display:flex;
+	list-style:none;
+	justify-content:space-around;
+	align-items:center;
+	width:600px;
+	height:100%;
+}
+
+#menu li a:hover{
+	background-color:white;
+	color:black;
+}
+
+#menu li a{
+	color:orange;
+	font-weight:bolder;
+	transition:background 200ms;
+	text-decoration:none;
+	padding:6px;
+}
+
+#margemesquerda{
+	background-color:orange;
+	opacity:80%;
+	grid-column:1/2;
+	grid-row:3/10;
+}
+
+#margemdireita{
+	background-color:orange;
+	opacity:80%;
+	grid-column:6/7;
+	grid-row:3/10;
+}
+
+#anterior{
+	background-color:#000000cf;
+	grid-column:2/6;
+	grid-row:4/5;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	flex-wrap:wrap;
+}
+
+#anterior img{
+	width:400px;
+}
+
+#anterior h1{
+	font-size:80px;
+}
+
+#anterior p{
+	color:gray;
+	font-size:20px;
+}
+
+#entre{
+	background-color:black;
+	grid-column:2/6;
+	grid-row:5/6;
+}
+
+#conteudoprincipal{
+	background-color:#000000cf;
+	grid-column:2/6;
+	grid-row:6/7;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	flex-wrap:wrap;
+}
+
+#conteudoprincipal img{
+	box-shadow:7px 7px 4px 2px black;
+	width:400px;
+	height:300px;
+}
+
+#conteudoprincipal h1{
+	font-size:100px;
+}
+
+#conteudoprincipal p{
+	color:gray;
+	font-size:20px;
+}
+
+#entre2{
+	background-color:black;
+	grid-column:2/6;
+	grid-row:7/8;
+}
+
+#cardapio{
+	background-color:#1c1200ed;
+	padding-bottom:40px;
+	grid-column:2/6;
+	grid-row:8/9;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:space-evenly;
+}
+
+.titulo{
+	background-color:#00000066;
+	width:80%;
+	height:10vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.titulo h1{
+	font-size:4rem;
+	color:orange;
+	padding-top:10px;
+}
+
+.pratos{
+	background-color:#00000066;
+	transition:500ms;
+	padding:50px;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	width:80%;
+	column-gap:50px;
+	row-gap:60px;
+	
+}
+
+.pratos article{
+	background-color:#ffffffba;
+	width:270px;
+	height:300px;
+	border-radius:10px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:space-evenly;
+}
+
+.pratos article:hover{
+	background-color:white;
+}
+
+.pratos article img{
+	width:260px;
+	height:200px;
+}
+
+.pratos{
+	color:black;
+}
+
+.dados{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+#rodape{
+	background-color:black;
+	color:gray;
+	grid-column:1/7;
+	grid-row:10/11;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding-left:10px;
+}
+
+.redes{
+	width:400px;
+	height:50px;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+}
+
+.redes img{
+	width:20px;
+	height:20px;
+}
+
+.redes a{
+	color:gray;
+	width:260px;
+	text-decoration:none;
+	display:flex;
+	justify-content:space-evenly;
+	transition:200ms;
+}
+
+.redes a:hover{
+	color:orange;
+}
+
+
+
+
